@@ -35,10 +35,9 @@ func main() {
 
 	// marshal json result
 	result, err := json.Marshal(mapResult)
-
 	if err != nil {
-		fmt.Printf("Error: %s", err.Error())
-	} else {
-		fmt.Println(string(result))
+		panic(err.Error())
 	}
+
+	fmt.Println(string(result))
 }
