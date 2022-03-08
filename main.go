@@ -13,7 +13,7 @@ func main() {
 	// optional if don't use space
 	input = strings.ReplaceAll(input, " ", "")
 	// optional if lower case OR strings.ToUpper(input) if upper case
-	// input = strings.ToLower(input)
+	input = strings.ToLower(input)
 
 	// make unique array input
 	keys := make(map[string]bool)
